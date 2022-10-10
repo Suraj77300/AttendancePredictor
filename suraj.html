@@ -1,0 +1,118 @@
+<html>
+<title>
+my project
+</title>
+<head>
+<link rel="legend" type="text/css" href="one.css">
+<script type="text/javascript" lang="javascript" style="background-color:darkslategrey;">
+function suraj()
+{
+var a=document.getElementById("con").value;
+var b=document.getElementById("att").value;
+var d=document.getElementById("classes").value;
+var e=document.getElementById("attend").value;
+var s=d*e;
+var r1=parseInt(b)+parseInt(s);
+var r2=parseInt(a)+parseInt(s);
+var result=(r1/r2)*100;
+alert("Your attendance percentage after attending the college for"+" "+e+" "+"days is :"+result+
+"<br> No of classes attended is"+r1+"<br> No of classes conducted is "+r2);
+}
+function kumar()
+{
+var a=document.getElementById("con").value;
+var b=document.getElementById("att").value;
+var d=document.getElementById("classes").value;
+var e=document.getElementById("bunk").value;
+var s=d*e;
+var r1=parseInt(b);
+var r2=parseInt(a)+parseInt(s);
+var result=(r1/r2)*100;
+alert("your attendance percentage after bunking  the college for"+e+"days is :"+result);
+}
+function velumula()
+{
+alert("Your feedback entered succesfully");
+}
+</script>
+<style>
+body{
+color:snow;
+font-family:garamond;
+font-style:obliq;
+}
+</style>
+<link href="one.css" rel="stylesheet" type="text/css">
+</head>
+<div>
+<h1 style="background-color:navy;text-align:center;padding:6px;color:yellow;"><sup style="font-size:15"><b>Hydra</b></sup> Attendance Predictor  <sub style="font-size:18;">75%</sub> </h1>
+</div>
+<body bgcolor="black">
+<form>
+<fieldset style="background-color:darkslategray">
+<legend style="text-align:center;background-color:lightslategrey;color:yellow;">
+Check your <i style="background-color:tomato"> Attendance </i> here
+</legend>
+<br>
+<tabindex>
+Total number of classes conducted:-<input type="number" name="conducted" id="con"  placeholder="enter the value" maxlength="3" size="3"><br>
+Total number of classes  attended : - <input type="number" name="attended"  id="att" placeholder="enter the value" maxlength="3" size="3"><br>
+<br>
+Total number of classes per day:-<select name="total number of classes" id="classes">
+<option value="1"> 1 </option>
+<option value="2"> 2 </option>
+<option value="3"> 3 </option>
+<option value="4"> 4 </option>
+<option value="5"> 5 </option>
+<option value="6"> 6 </option>
+<option value="7"> 7 </option>
+<option value="8"> 8 </option>
+</select>
+<br><br> Checking the attendance after attending the college for <select id="attend" name="total number of classes">
+<option value="1"> 1 </option>
+<option value="2"> 2 </option>
+<option value="3"> 3 </option>
+<option value="4"> 4 </option>
+<option value="5"> 5 </option>
+<option value="6"> 6 </option>
+<option value="7"> 7 </option>
+<option value="8"> 8 </option>
+<option value="9"> 9 </option>
+<option value="10"> 10 </option>
+<option value="11"> 11 </option>
+<option value="12"> 12 </option>
+<option value="13"> 13 </option>
+<option value="14"> 14 </option>
+<option value="30"> 30 </option></select>  days
+<br>
+<br>
+<input type="button" style="background-color:orange" name="result" value="calculate" onclick="suraj()" style="color:darkmagenta">
+<br><br> Checking the attendance after bunking the college for <select id="bunk" name="total number of classes">
+<option value="1"> 1 </option>
+<option value="2"> 2 </option>
+<option value="3"> 3 </option>
+<option value="4"> 4 </option>
+<option value="5"> 5 </option>
+<option value="6"> 6 </option>
+<option value="7"> 7 </option>
+<option value="8"> 8 </option>
+<option value="9"> 9 </option>
+<option value="10"> 10 </option>
+<option value="11"> 11 </option>
+<option value="12"> 12 </option>
+<option value="13"> 13 </option>
+<option value="14"> 14 </option>
+<option value="15"> 15 </option></select>  days
+<br>
+<br>
+<input type="button" style="background-color:orange" name="result" value="calculate" onclick="kumar()" style="color:darkmagenta">
+
+<pre style="color:hotpink;font-style:arial"> NOTE:Refresh the page after each calculation </pre>
+</fieldset>
+Enter your feedback:-
+<br><textarea style="text-align:center" name="feedback" rows="3" cols="30" placeholder="Text your feedback here">
+</textarea>
+<br>
+<input type="button" style="background-color:orange" name="result" value="submit feedback" onclick="velumula()" style="color:darkmagenta"> 
+</body>
+</html>
